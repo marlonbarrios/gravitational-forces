@@ -1,7 +1,7 @@
 //Gravitational Attraction
 
 var Attractor = function() {
-  this.pos = createVector(mouseX, mouseY);
+  this.pos = createVector();
   this.mass = noise(14) * 80;
   this.G = 1;
 
@@ -23,9 +23,8 @@ var Attractor = function() {
 
   // Method to display
   this.display = function() {
-   
     strokeWeight(2);
     stroke(0);
-    ellipse(this.pos.x, this.pos.y, this.mass*2, this.mass*2);
+    ellipse(mouseX, mouseY, this.mass*2, this.mass*2);
   }
 }
