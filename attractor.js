@@ -1,7 +1,7 @@
 //Gravitational Attraction
 
 var Attractor = function() {
-  this.pos = createVector();
+  this.pos = createVector(mouseX, mouseY);
   this.mass = noise(14) * 80;
   this.G = 1;
 

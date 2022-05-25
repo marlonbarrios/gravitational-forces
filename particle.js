@@ -10,7 +10,7 @@ var Particle = function() {
   console.log(Math.random(0, windowWidth))
   this.vel = createVector(1, 0);
   this.acc = createVector(0, 0);
-  this.mass = noise(1) * 5;
+  this.mass = noise(1) * 10;
 
   this.applyForce = function(force) {
     var f = force.copy();
